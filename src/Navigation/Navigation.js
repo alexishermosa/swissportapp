@@ -6,9 +6,10 @@ import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 
 //screens
 import HomeScreen from '../screens/HomeScreen';
-import ArrivalScreen from '../screens/ArrivalScreen';
 import DepartureScreen from '../screens/DepartureScreen';
 import RampScreen from '../screens/RampScreen';
+import ArrivalStack from '../screens/ArrivalStack';
+
 
 const Tab = createBottomTabNavigator();
 
@@ -31,7 +32,7 @@ export default function TabsContainer() {
             ),
           }}
         />
-        <Tab.Screen name="Arrival" component={ArrivalScreen}
+        <Tab.Screen name="Arrival" component={ArrivalStack}
         options={{
           tabBarLabel: 'Arribos',
           tabBarIcon: ({color, size}) => (
