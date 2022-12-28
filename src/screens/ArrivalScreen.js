@@ -3,12 +3,14 @@ import { View, Text, TouchableOpacity } from 'react-native';
 import React from 'react';
 import tw from 'twrnc';
 import { useNavigation } from '@react-navigation/native';
+import data from '../../datos.json';
+
 
 export default function ArrivalScreen() {
-
   const navigation = useNavigation();
 
   return (
+    console.log(data.fechaActual),
     <View style={tw`flex flex-col justify-center items-center mb-4 w-full`}>
       <Text>ArrivalScreen</Text>
       <TouchableOpacity 
