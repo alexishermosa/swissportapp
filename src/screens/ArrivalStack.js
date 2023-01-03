@@ -5,7 +5,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
 //screens
 import ArrivalScreen from './ArrivalScreen';
-import NewArrivalScreen from './NewArrivalScreen';
+import AddArrivalScreen from './AddArrivalScreen';
 
 
 const ArrivalStack = createNativeStackNavigator();
@@ -13,8 +13,8 @@ const ArrivalStack = createNativeStackNavigator();
 export default function ArrivalStackScreen(){
   return (
     <ArrivalStack.Navigator>
-      <ArrivalStack.Screen name="Arrival" component={ArrivalScreen} options={{headerShown: false}} />
-      <ArrivalStack.Screen name="NewArrival" component={NewArrivalScreen} />
+      <ArrivalStack.Screen name="Arrival" component={ArrivalScreen} options={{headerShown: true}} />
+      <ArrivalStack.Screen name="AddArrival" component={AddArrivalScreen} />
     </ArrivalStack.Navigator>
   );
 }

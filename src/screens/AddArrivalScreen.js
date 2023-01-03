@@ -2,7 +2,7 @@
 import { View, Text, TextInput } from 'react-native';
 import React from 'react';
 
-const NewArrivalScreen = () => {
+const AddArrivalScreen = () => {
 
   const [text, onChangeText] = React.useState('Useless Text');
   const [number, onChangeNumber] = React.useState(null);
@@ -24,4 +24,4 @@ const NewArrivalScreen = () => {
   );
 };
 
-export default NewArrivalScreen;
+export default AddArrivalScreen;
